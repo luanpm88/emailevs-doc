@@ -445,9 +445,9 @@
     </code></pre>
       <p>Below is a list of client libraries.</p>
       <ul class="client-libraries-list">
-        <li> <a href="https://github.com/{{ trans('messages.app_sdk_name') }}/{{ trans('messages.app_sdk_php') }}"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="Ruby">
+        <li> <a href="{{ trans('messages.app_sdk_php_url') }}"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="Ruby">
             <span>{{ trans('messages.app_sdk_php') }}</span> </a> </li>
-        <li> <a href="https://github.com/{{ trans('messages.app_sdk_name') }}/{{ trans('messages.app_sdk_c_sharp') }}"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg" alt="Node JS">
+        <li> <a href="{{ trans('messages.app_sdk_c_sharp_url') }}"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg" alt="Node JS">
             <span>{{ trans('messages.app_sdk_c_sharp') }}</span> </a> </li>
       </ul>
       <h1 id="emails">Emails</h1>
