@@ -46,7 +46,7 @@
     content="Complete API documentation for the {{ trans('messages.app_name') }} API. Includes code snippets and examples for cURL as well as our Ruby, Node.js, and Python libraries. ">
   <meta name="twitter:image" content="https://{{ trans('messages.app_domain') }}/docs/api/images/meta/meta-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@athenaevs">
+  <meta name="twitter:site" content="@{{ trans('messages.app_key') }}">
   <meta name="description"
     content="Complete API documentation for the {{ trans('messages.app_name') }} API. Includes code snippets and examples for cURL as well as our Ruby, Node.js, and Python libraries. ">
   <style>
@@ -331,7 +331,7 @@
       style="display:none;visibility:hidden"></iframe></noscript> <a href="#" id="nav-button"> <span> NAV <img
         src="images/navbar.png" alt=""> </span> </a>
   <div class="toc-wrapper"> <a href="https://{{ trans('messages.app_domain') }}"><img src="{{ env('APP_LOGO') }}" class="logo"
-        data-at2x="images/athenaevs-logo--main.png" data-rjs="2" alt="" data-rjs-processed="true"></a>
+        data-at2x="images/{{ trans('messages.app_key') }}-logo--main.png" data-rjs="2" alt="" data-rjs-processed="true"></a>
     <div class="lang-selector"> <a href="#" data-language-name="shell" class="">cURL</a> <a href="#"
         data-language-name="ruby" class="">ruby</a> <a href="#" data-language-name="javascript" class="active">node</a>
       <a href="#" data-language-name="python">python</a> </div>
@@ -390,9 +390,9 @@
     </code></pre>
       <pre class="highlight ruby tab-ruby" style="display: none;"><code><span class="no">{{ trans('messages.app_name') }}</span><span class="p">.</span><span class="nf">api_key</span> <span class="o">=</span> <span class="s1">'your_api_key'</span>
     </code></pre>
-      <pre class="highlight javascript tab-javascript" style="display: block;"><code><span class="kd">var</span> <span class="nx">athenaevs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"athenaevs"</span><span class="p">)(</span><span class="s2">"your_api_key"</span><span class="p">);</span>
+      <pre class="highlight javascript tab-javascript" style="display: block;"><code><span class="kd">var</span> <span class="nx">{{ trans('messages.app_key') }}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"{{ trans('messages.app_key') }}"</span><span class="p">)(</span><span class="s2">"your_api_key"</span><span class="p">);</span>
     </code></pre>
-      <pre class="highlight python tab-python" style="display: none;"><code><span class="n">client</span> <span class="o">=</span> <span class="n">athenaevs</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="s">'your_api_key'</span><span class="p">)</span>
+      <pre class="highlight python tab-python" style="display: none;"><code><span class="n">client</span> <span class="o">=</span> <span class="n">{{ trans('messages.app_key') }}</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="s">'your_api_key'</span><span class="p">)</span>
     </code></pre>
       <blockquote>
         <p>Make sure to replace <code>your_api_key</code> with your API key.</p>
@@ -435,20 +435,20 @@
       <p>Trusted IP address and trusted domain restrictions will still apply to test keys. Domain-based rate limits for
         public API keys are not enforced for test keys.</p>
       <h2 id="client-libraries">Client Libraries</h2>
-      <pre class="highlight ruby tab-ruby" style="display: none;"><code><span class="n">gem</span> <span class="n">install</span> <span class="n">athenaevs</span>
+      <pre class="highlight ruby tab-ruby" style="display: none;"><code><span class="n">gem</span> <span class="n">install</span> <span class="n">{{ trans('messages.app_key') }}</span>
     </code></pre>
-      <pre class="highlight javascript tab-javascript" style="display: block;"><code><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">athenaevs</span> <span class="o">--</span><span class="nx">save</span>
+      <pre class="highlight javascript tab-javascript" style="display: block;"><code><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">{{ trans('messages.app_key') }}</span> <span class="o">--</span><span class="nx">save</span>
     <span class="err">#</span> <span class="nx">or</span>
-    <span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">athenaevs</span>
+    <span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">{{ trans('messages.app_key') }}</span>
     </code></pre>
-      <pre class="highlight python tab-python" style="display: none;"><code><span class="n">pip</span> <span class="n">install</span> <span class="n">athenaevs</span>
+      <pre class="highlight python tab-python" style="display: none;"><code><span class="n">pip</span> <span class="n">install</span> <span class="n">{{ trans('messages.app_key') }}</span>
     </code></pre>
       <p>Below is a list of client libraries.</p>
       <ul class="client-libraries-list">
-        <li> <a href="https://github.com/athenaevs/athenaevs-php"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="Ruby">
-            <span>athenaevs-php</span> </a> </li>
-        <li> <a href="https://github.com/athenaevs/athena-c-sharp"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg" alt="Node JS">
-            <span>athenaevs-c-sharp</span> </a> </li>
+        <li> <a href="https://github.com/{{ trans('messages.app_key') }}/{{ trans('messages.app_key') }}-php"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="Ruby">
+            <span>{{ trans('messages.app_key') }}-php</span> </a> </li>
+        <li> <a href="https://github.com/{{ trans('messages.app_key') }}/{{ trans('messages.app_key') }}-c-sharp"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/C_Sharp_Logo_2023.svg" alt="Node JS">
+            <span>{{ trans('messages.app_key') }}-c-sharp</span> </a> </li>
       </ul>
       <h1 id="emails">Emails</h1>
       <h2 id="verify-an-email">Verify an email</h2>
@@ -456,7 +456,7 @@
     </code></pre>
       <pre class="highlight ruby tab-ruby" style="display: none;"><code><span class="no">{{ trans('messages.app_name') }}</span><span class="p">.</span><span class="nf">verify</span><span class="p">(</span><span class="s1">'john@smith.com'</span><span class="p">)</span>
     </code></pre>
-      <pre class="highlight javascript tab-javascript" style="display: block;"><code><span class="nx">athenaevs</span><span class="p">.</span><span class="nx">verify</span><span class="p">(</span><span class="s1">'john@smith.com'</span><span class="p">)</span>
+      <pre class="highlight javascript tab-javascript" style="display: block;"><code><span class="nx">{{ trans('messages.app_key') }}</span><span class="p">.</span><span class="nx">verify</span><span class="p">(</span><span class="s1">'john@smith.com'</span><span class="p">)</span>
       <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// asynchronously called</span>
       <span class="p">});</span>
@@ -678,7 +678,7 @@
     </code></pre>
       <pre class="highlight javascript tab-javascript" style="display: block;"><code><span class="kd">var</span> <span class="nx">emails</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'tim@smith.com'</span><span class="p">,</span> <span class="s1">'john@smith.com'</span><span class="p">];</span>
     <!-- <span class="kd">var</span> <span class="nx">callback</span> <span class="o">=</span> <span class="s1">'http://example.com/callback'</span><span class="p">;</span> -->
-    <span class="nx">athenaevs</span><span class="p">.</span><span class="nx">batches</span><span class="p">.</span><span class="nx">verify</span><span class="p">(</span><span class="nx">emails</span><span class="p">)</span>
+    <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">.</span><span class="nx">batches</span><span class="p">.</span><span class="nx">verify</span><span class="p">(</span><span class="nx">emails</span><span class="p">)</span>
       <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// asynchronously called</span>
       <span class="p">});</span>
@@ -788,7 +788,7 @@
     <span class="n">batch</span><span class="p">.</span><span class="nf">status</span>
     </code></pre>
       <pre class="highlight javascript tab-javascript" style="display: block;"><code><span class="kd">var</span> <span class="nx">id</span> <span class="o">=</span> <span class="s1">'5cf6dd30093f96d2ac34bb0a'</span><span class="p">;</span>
-    <span class="nx">athenaevs</span><span class="p">.</span><span class="nx">batches</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+    <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">.</span><span class="nx">batches</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
       <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// asynchronously called</span>
       <span class="p">});</span>
@@ -939,7 +939,7 @@
       </blockquote>
       <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
       </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5cf6dd30093f96d2ac34bb0a"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"download_file"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://app.athenaevs-cdn.com/downloads/6284ee8ee1b8323ee12c201c/5cf6dd30093f96d2ac34bb0a.csv?X-Amz-Expires=3600&amp;X-Amz-Date=20220518T130252Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA5FIXD2WWI62KKBML/20220518/us-east-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=7e38682a949082d7cc7e8e2bdc09973e0fdedd858de23061447af1a32ee65779"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"download_file"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://app.{{ trans('messages.app_key') }}-cdn.com/downloads/6284ee8ee1b8323ee12c201c/5cf6dd30093f96d2ac34bb0a.csv?X-Amz-Expires=3600&amp;X-Amz-Date=20220518T130252Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA5FIXD2WWI62KKBML/20220518/us-east-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=7e38682a949082d7cc7e8e2bdc09973e0fdedd858de23061447af1a32ee65779"</span><span class="p">,</span><span class="w">
       </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Batch verification completed."</span><span class="p">,</span><span class="w">
       </span><span class="s2">"reason_counts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="s2">"accepted_email"</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span><span class="w">
@@ -1135,7 +1135,7 @@
     </code></pre>
       <pre class="highlight ruby tab-ruby" style="display: none;"><code><span class="no">{{ trans('messages.app_name') }}</span><span class="p">.</span><span class="nf">account</span>
     </code></pre>
-      <pre class="highlight javascript tab-javascript" style="display: block;"><code><span class="nx">athenaevs</span><span class="p">.</span><span class="nx">account</span><span class="p">()</span>
+      <pre class="highlight javascript tab-javascript" style="display: block;"><code><span class="nx">{{ trans('messages.app_key') }}</span><span class="p">.</span><span class="nx">account</span><span class="p">()</span>
       <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// asynchronously called</span>
       <span class="p">});</span>
@@ -1213,9 +1213,9 @@
         <span class="nx">s</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'script'</span><span class="p">),</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'script'</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
         <span class="nx">s</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">'https://js.{{ trans('messages.app_domain') }}/v2/'</span><span class="p">;</span>
         <span class="nx">fs</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span> <span class="nx">fs</span><span class="p">)</span>
-      <span class="p">})(</span><span class="nb">window</span><span class="p">,</span> <span class="nb">document</span><span class="p">,</span> <span class="s1">'athenaevs'</span><span class="p">);</span>
+      <span class="p">})(</span><span class="nb">window</span><span class="p">,</span> <span class="nb">document</span><span class="p">,</span> <span class="s1">'{{ trans('messages.app_key') }}'</span><span class="p">);</span>
     
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'apiKey'</span><span class="p">,</span> <span class="s1">'your_api_key'</span><span class="p">);</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'apiKey'</span><span class="p">,</span> <span class="s1">'your_api_key'</span><span class="p">);</span>
     <span class="nt">&lt;/script&gt;</span>
     </code></pre>
       <h2 id="configuration-options">Configuration Options</h2>
@@ -1224,7 +1224,7 @@
       <div class="center-column"></div>
       <pre class="highlight html tab-html"><code><span class="nt">&lt;script&gt;</span>
       <span class="c1">// types of emails that are allowed</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'allow'</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'allow'</span><span class="p">,</span> <span class="p">{</span>
         <span class="na">states</span><span class="p">:</span> <span class="p">[</span><span class="s1">'deliverable'</span><span class="p">,</span> <span class="s1">'risky'</span><span class="p">,</span> <span class="s1">'unknown'</span><span class="p">],</span>
         <span class="na">free</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="na">role</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -1233,39 +1233,39 @@
     
       <span class="c1">// maximum time to wait for the verification to respond. some mail servers</span>
       <span class="c1">// are slow and we don't want to hold the user up for too long.</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'verificationTimeout'</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'verificationTimeout'</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
     
       <span class="c1">// how long to wait after a user stops typing to verify the email</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'verifyAfterDelay'</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'verifyAfterDelay'</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
     
       <span class="c1">// enable form validation messages</span>
       <span class="c1">// this will also remove the novalidate attribute from forms with one</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'formValidation'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'formValidation'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
     
       <span class="c1">// this is the selector for the inputs we will monitor</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'inputSelector'</span><span class="p">,</span> <span class="s1">'input[type=email]'</span><span class="p">);</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'inputSelector'</span><span class="p">,</span> <span class="s1">'input[type=email]'</span><span class="p">);</span>
     
       <span class="c1">// array of form names to ignore</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'ignoredForms'</span><span class="p">,</span> <span class="p">[]);</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'ignoredForms'</span><span class="p">,</span> <span class="p">[]);</span>
     
       <span class="c1">// array of input names to ignore</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'ignoredInputs'</span><span class="p">,</span> <span class="p">[]);</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'ignoredInputs'</span><span class="p">,</span> <span class="p">[]);</span>
     
       <span class="c1">// users who enter 10+ emails will be rate-limited by our servers.</span>
       <span class="c1">// when set to true the user will get the rateLimited message.</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'blockOnRateLimit'</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'blockOnRateLimit'</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span>
     
       <span class="c1">// the parent element to append the status element to. can be an element or</span>
       <span class="c1">// CSS identifier.</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'statusAppendTo'</span><span class="p">,</span> <span class="s1">'body'</span><span class="p">)</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'statusAppendTo'</span><span class="p">,</span> <span class="s1">'body'</span><span class="p">)</span>
     
       <span class="c1">// styles</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'style'</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'style'</span><span class="p">,</span> <span class="p">{</span>
         <span class="na">loadingIconColor</span><span class="p">:</span> <span class="s1">'rgba(0, 0, 0, 0.3)'</span>
       <span class="p">});</span>
     
       <span class="c1">// messages</span>
-      <span class="nx">athenaevs</span><span class="p">(</span><span class="s1">'messages'</span><span class="p">,</span> <span class="p">{</span>
+      <span class="nx">{{ trans('messages.app_key') }}</span><span class="p">(</span><span class="s1">'messages'</span><span class="p">,</span> <span class="p">{</span>
         <span class="na">verifying</span><span class="p">:</span> <span class="s2">"Please wait a moment while we verify your email address."</span><span class="p">,</span>
         <span class="na">invalid</span><span class="p">:</span> <span class="s2">"It looks like you've entered an invalid email address."</span><span class="p">,</span>
         <span class="na">role</span><span class="p">:</span> <span class="s2">"It looks like you've entered a role or group email address."</span><span class="p">,</span>
